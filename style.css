@@ -9,7 +9,7 @@ body, html {
 .header {
   position: relative;
   width: 100%;
-  height: 200vh; /* Taller to prepare for more content */
+  height: 300vh; /* shortened */
   overflow: hidden;
 }
 
@@ -39,9 +39,9 @@ body, html {
 
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 50%,      /* fully transparent upper section */
-    rgba(245, 223, 232, 0.4) 75%,    /* pinkish fade begins */
-    rgba(245, 223, 232, 1) 100%      /* solid soft pink at the bottom */
+    rgba(255, 255, 255, 0) 30%,      /* fully transparent upper section */
+    rgba(245, 223, 232, 0.4) 50%,    /* pinkish fade begins */
+    rgba(245, 223, 232, 1) 70%      /* solid soft pink at the bottom */
   );
 }
 
@@ -85,7 +85,7 @@ body, html {
 /* --- Responsive text scaling --- */
 @media (max-width: 900px) {
   .header-content {
-    top: 38%; /* Slightly lower for tablets */
+    top: 32%; /* Slightly lower for tablets */
   }
   .header-content h1 {
     font-size: 2.2rem;
