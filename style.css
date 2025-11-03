@@ -9,24 +9,24 @@ body, html {
 .header {
   position: relative;
   width: 100%;
-  height: 150vh; /* extended height for fade */
+  height: 200vh; /* Taller to prepare for more content */
   overflow: hidden;
 }
 
-/* Responsive adjustment: slightly smaller on smaller screens */
+/* Responsive header height */
 @media (max-width: 900px) {
   .header {
-    height: 120vh;
+    height: 160vh;
   }
 }
 
 @media (max-width: 600px) {
   .header {
-    height: 100vh;
+    height: 130vh;
   }
 }
 
-/* Gradient overlay */
+/* Gradient overlay that fades to #f5dfe8 */
 .header::after {
   content: "";
   position: absolute;
@@ -37,19 +37,18 @@ body, html {
   pointer-events: none;
   z-index: 2;
 
-  /* Vertical fade that adapts to screen height */
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 55%,  /* transparent top */
-    rgba(255, 255, 255, 0.5) 75%, /* mid fade */
-    rgba(255, 255, 255, 1) 95%   /* full white bottom */
+    rgba(255, 255, 255, 0) 50%,      /* fully transparent upper section */
+    rgba(245, 223, 232, 0.4) 75%,    /* pinkish fade begins */
+    rgba(245, 223, 232, 1) 100%      /* solid soft pink at the bottom */
   );
 }
 
-/* Text Overlay */
+/* Text overlay */
 .header-content {
   position: absolute;
-  top: 42%;
+  top: 36%; /* Moved slightly upward again */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -58,15 +57,14 @@ body, html {
   padding: 0 1rem;
 }
 
-/* Main heading */
+/* Heading text */
 .header-content h1 {
   font-size: 2.8rem;
   font-weight: 300;
   letter-spacing: 1.5px;
   margin: 0;
-  background: none;
-  padding: 0;
   line-height: 1.2;
+  background: none;
 }
 
 /* Subtext */
@@ -77,15 +75,18 @@ body, html {
   margin-top: 12px;
   text-align: center;
 }
+
+/* Links inside subtext */
 .subtext a {
   color: inherit;
   text-decoration: underline;
 }
 
 /* --- Responsive text scaling --- */
-
-/* Medium screens (tablets) */
 @media (max-width: 900px) {
+  .header-content {
+    top: 38%; /* Slightly lower for tablets */
+  }
   .header-content h1 {
     font-size: 2.2rem;
   }
@@ -94,8 +95,10 @@ body, html {
   }
 }
 
-/* Small screens (phones) */
 @media (max-width: 600px) {
+  .header-content {
+    top: 40%; /* Keep text vertically balanced */
+  }
   .header-content h1 {
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -106,8 +109,10 @@ body, html {
   }
 }
 
-/* Extra small screens (tiny phones) */
 @media (max-width: 400px) {
+  .header-content {
+    top: 42%;
+  }
   .header-content h1 {
     font-size: 1.6rem;
   }
