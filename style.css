@@ -48,7 +48,7 @@ body, html {
 /* Text overlay */
 .header-content {
   position: absolute;
-  top: 36%; /* Moved slightly upward again */
+  top: 20%; /* Moved slightly upward again */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
