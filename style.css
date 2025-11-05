@@ -9,7 +9,7 @@ body, html {
 .header {
   position: relative;
   width: 100%;
-  height: 90vh; /* shortened */
+  height: 100vh; /* shortened */
   overflow: hidden;
 }
 
@@ -39,9 +39,9 @@ body, html {
 
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 65%,      /* fully transparent upper section */
-    rgba(248, 240, 244, 0.4) 80%,    /* pinkish fade begins */
-    rgb(251, 244, 247) 100%      /* solid soft pink at the bottom */
+    rgba(255, 255, 255, 0) 75%,      /* fully transparent upper section */
+    rgba(248, 240, 244, 0.4) 85%,    /* pinkish fade begins */
+    rgb(255, 255, 255) 100%      /* solid soft pink at the bottom */
   );
 }
 
