@@ -41,7 +41,7 @@ body, html {
     to bottom,
     rgba(255, 255, 255, 0) 75%,      /* fully transparent upper section */
     rgba(248, 240, 244, 0.4) 85%,    /* pinkish fade begins */
-    rgb(255, 255, 255) 100%      /* solid soft pink at the bottom */
+    rgb(255, 255, 255) 97%      /* solid soft pink at the bottom */
   );
 }
 
