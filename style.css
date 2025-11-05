@@ -39,7 +39,7 @@ body, html {
 
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 60%,      /* fully transparent upper section */
+    rgba(255, 255, 255, 0) 65%,      /* fully transparent upper section */
     rgba(248, 240, 244, 0.4) 80%,    /* pinkish fade begins */
     rgb(251, 244, 247) 100%      /* solid soft pink at the bottom */
   );
