@@ -34,3 +34,21 @@ new FinisherHeader({
     "c"
   ]
 });
+
+// --- Display "Last updated" timestamp ---
+const updatedEl = document.getElementById("last-updated");
+
+// Format the date and time neatly
+const options = {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+  hour: "2-digit",
+  minute: "2-digit"
+};
+
+const lastUpdated = new Date(document.lastModified).toLocaleString("en-US", options);
+
+// Show it on the page
+updatedEl.textContent = `Last updated: ${lastUpdated}`;
+

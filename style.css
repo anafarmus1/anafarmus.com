@@ -126,3 +126,18 @@ body, html {
     font-size: 0.8rem;
   }
 }
+
+/* Last updated timestamp */
+#last-updated {
+  position: fixed;
+  top: 10px;
+  left: 16px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  z-index: 1000;
+  user-select: none;
+  pointer-events: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
