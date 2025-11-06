@@ -9,7 +9,7 @@ body, html {
 .header {
   position: relative;
   width: 100%;
-  height: 120vh; /* shortened */
+  height: 130vh; /* shortened */
   overflow: hidden;
 }
 
@@ -39,18 +39,20 @@ body, html {
 
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 60%,        /* start fade earlier */
-    rgba(250, 245, 248, 0.3) 75%,      /* gentle mid-fade */
-    rgba(252, 248, 250, 0.6) 88%,      /* smoother ramp */
-    rgba(255, 255, 255, 1) 100%        /* solid white bottom */
+    rgba(255, 255, 255, 0) 60%,
+    rgba(250, 245, 248, 0.3) 75%,
+    rgba(252, 248, 250, 0.6) 88%,
+    rgba(255, 255, 255, 1) 100%
   );
+
+  backdrop-filter: blur(2px);
 }
 
 
 /* Text overlay */
 .header-content {
   position: absolute;
-  top: 45%; /* Moved slightly upward */
+  top: 40%; /* Moved slightly upward */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -93,7 +95,7 @@ body, html {
 /* --- Responsive text scaling --- */
 @media (max-width: 900px) {
   .header-content {
-    top: 32%; /* Slightly lower for tablets */
+    top: 30%; /* Slightly lower for tablets */
   }
   .header-content h1 {
     font-size: 2.2rem;
