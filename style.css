@@ -26,6 +26,31 @@ body, html {
   }
 }
 
+/* Subtle bottom-only blur */
+.header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh; /* only the bottom 20% of the header */
+  pointer-events: none;
+  z-index: 1;
+
+  /* Transparent gradient mask for smoothness */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 40%,
+    rgba(255, 255, 255, 0.3) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* The subtle diffusion effect */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
 /* Softer, longer gradient blend */
 .header::after {
   content: "";
